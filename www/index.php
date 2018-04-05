@@ -1,6 +1,8 @@
 Database connection details:
 <?php
 #	phpinfo(1|4|8);
+	echo "phpinfo(4)" . "<br>\n";
+	phpinfo(4);
 	$conn = pg_connect(getenv("DATABASE_URL"));
 	echo "<br>" . chr(10); // same as /n
 	echo $conn . "<br>\n";
